@@ -1,0 +1,142 @@
+@import url("../assets/fonts/proxima-nova/stylesheet.css");
+.navbar {
+  background-color: #fff;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-family: "Proxima Nova Lt";
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.navbar .container {
+  padding: 0;
+}
+
+.navbar .navbar-collapse {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.navbar .navbar-collapse .nav-item {
+  color: #1e1e1e;
+  position: relative;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  z-index: 1;
+}
+
+.navbar .navbar-collapse .nav-item img {
+  width: 20px;
+}
+
+.navbar .navbar-collapse .nav-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.navbar .navbar-collapse .nav-item::after {
+  content: " ";
+  width: 100%;
+  height: 0;
+  background-color: #1e1e1e;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  z-index: -1;
+}
+
+.navbar .navbar-collapse .nav-item:hover {
+  color: #fff;
+}
+
+.navbar .navbar-collapse .nav-item:hover img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.navbar .navbar-collapse .nav-item:hover::after {
+  height: 100%;
+}
+
+.navbar .navbar-toggler-icon {
+  background: none;
+}
+
+.cases .case {
+  height: 512px;
+  background-image: url("https://colorlib.com/wp/wp-content/uploads/sites/2/featured_stationery-mockups.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 0 0 32px 32px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.cases .case .overlay {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  opacity: 0;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform: scale(1.1) translateY(20%);
+          transform: scale(1.1) translateY(20%);
+}
+
+.cases .case .overlay .case-title, .cases .case .overlay .category, .cases .case .overlay .type {
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.cases .case .overlay .type {
+  font-family: "Proxima Nova Th";
+}
+
+.cases .case .overlay .case-title {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.cases .case .overlay .category {
+  font-size: 20px;
+  font-family: "Proxima Nova Th";
+}
+
+.cases .case:hover {
+  background-color: #b80000;
+  background-blend-mode: multiply;
+}
+
+.cases .case:hover .overlay {
+  opacity: 1;
+  -webkit-transform: scale(1) translateY(0);
+          transform: scale(1) translateY(0);
+}
+
+.cases .case-1 {
+  background-image: url("https://mockups-design.com/wp-content/uploads/2019/04/Single_US_Letter_Flyer_Mockup_1.jpg");
+}
+
+.cases .case-3 {
+  background-image: url("https://zippypixels.com/wp-content/uploads/2015/11/perspective-mockup-responsive-website-desktop-tab-mobile.jpg");
+}
+
+body, html {
+  scroll-behavior: smooth;
+  font-family: "Proxima Nova Rg";
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,10 @@
+@import 'variables';
+@import 'header';
+
+@import 'views/cases';
+
+
+body, html {
+    scroll-behavior: smooth;
+    font-family: $default-font;
+}
