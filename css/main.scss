@@ -1,10 +1,84 @@
 @import 'variables';
+@import 'mixins';
 @import 'header';
+@import 'footer';
 
 @import 'views/cases';
 
+@import 'pages/who';
 
 body, html {
     scroll-behavior: smooth;
     font-family: $default-font;
+}
+
+.cursor {
+    width: 64px;
+    height: 64px;
+    border: 1px solid #1e1e1e;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+    z-index: 9999;
+    @include mobile {
+        display: none;
+    }
+}
+
+.cursor::after {
+    content: "";
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    border: 8px solid gray;
+    border-radius: 50%;
+    opacity: .5;
+    top: -1px;
+    left: -1px;
+    animation: cursorAnim2 .5s infinite alternate;
+    @include mobile {
+        display: none;
+    }
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+}
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.5);
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.expand {
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid red;
+    @include mobile {
+        display: none;
+    }
 }

@@ -1,0 +1,44 @@
+.footer {
+    padding: 16px 0;
+    
+    .footer-brand {
+        display: flex;
+        height: auto;
+        align-items: center;
+        .copy {
+            font-family: $default-font-lt;
+            margin: 0;
+            line-height: 1;
+            margin-left: 16px;
+        }
+        .logo-footer {
+            width: 64px;
+        }
+    }
+
+    .social {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        position: relative;
+        width: 100%;
+        justify-content: flex-end;
+        .social-item {
+            &:not(:last-child) {
+                margin-right: 16px;
+            }
+            .social-link {
+                color: $grey;
+                font-size: 18px;
+                -webkit-transition: all .1s ease;
+                -moz-transition: all .1s ease;
+                -o-transition: all .1s ease;
+                transition: all .1s ease;
+                &:hover {
+                    color: $red;
+                    border-bottom: 1px solid $red;
+                }
+            }
+        }
+    }
+}
