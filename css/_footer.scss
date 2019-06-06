@@ -10,6 +10,9 @@
             margin: 0;
             line-height: 1;
             margin-left: 16px;
+            @include mobile {
+                display: none;
+            }
         }
         .logo-footer {
             width: 64px;

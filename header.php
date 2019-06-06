@@ -18,7 +18,7 @@
                     <a class="nav-item nav-link" href="index.php">O que fizemos</a>
                     <a class="nav-item nav-link" href="services.php">O que fazemos</a>
                     <a class="nav-item nav-link" href="where.php">Onde estamos</a>
-                    <a class="nav-item nav-link" href="#">Fale conosco</a>
+                    <a class="nav-item nav-link" href="contact.php">Fale conosco</a>
                 </div>
             </div>
         </div>

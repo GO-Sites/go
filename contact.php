@@ -26,6 +26,7 @@
                                     <input type="checkbox" id="check6" class="checkbox" /><label for="check6" class="label-check">Comunicação Corporativa</label>
                                 </div>
                             </div>
+                            <button type="submit" class="button">Let's GO!</button>
                         </form>
                     </div>
                 </div>
