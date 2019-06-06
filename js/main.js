@@ -1,4 +1,4 @@
-//2. responsive
+//Responsive
 var $window = $(window);
 
 function checkWidth() {
@@ -15,6 +15,38 @@ function checkWidth() {
             setTimeout(() => {
                 cursor.classList.remove("expand");
             }, 500)
+        });
+
+        $(window).scroll(function (event) {
+            var scroll = $(window).scrollTop();
+            var data = $('.data');
+            var nav = $('.navbar');
+            var navHeight = $('.navbar').outerHeight();
+
+            if(scroll > 0) {
+                nav.css({
+                    "position": "fixed",
+                    "width":"100%",
+                    "z-index":"9999"
+                });
+            } else {
+                nav.css("position","relative");
+            }
+            
+            if(scroll > nav.height()) {
+                console.log(scroll);
+                console.log(nav.height());
+                data.css({
+                    "position": "fixed",
+                    "max-width": "350px",
+                    "top": navHeight+"px"
+                });
+            } else {
+                data.css({
+                    "position": "relative",
+                    "top":"0px"
+                });
+            }
         });
     }
 }

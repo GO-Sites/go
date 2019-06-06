@@ -17,17 +17,6 @@
                 padding: 16px;
                 font-size: 32px;
             }
-            &::before {
-                content: " ";
-                width: 128px;
-                height: 128px;
-                background-image: url('../assets/icons/quote.svg');
-                background-size: contain;
-                filter: invert(1);
-                opacity: 0.5;
-                position: absolute;
-                z-index: 1;
-            }
         }
         .arrow {
             filter: invert(1);
@@ -136,27 +125,27 @@
             }
         }
     }
+}
 
-    .jorge {
-        background-image: url('../assets/img/Jorge.png');
-    }
+.jorge {
+    background-image: url('../assets/img/Jorge.png');
+}
 
-    .naty {
-        background-image: url('../assets/img/Naty.png');
-    }
+.naty {
+    background-image: url('../assets/img/Naty.png');
+}
 
-    .davi {
-        background-image: url('../assets/img/Davi.jpg');
-    }
+.davi {
+    background-image: url('../assets/img/Davi.jpg');
+}
 
-    .alisson {
-        background-image: url('../assets/img/Alysson.jpg');
-    }
+.alisson {
+    background-image: url('../assets/img/Alysson.jpg');
+}
 
-    .lucas {
-        background-image: url('../assets/img/Lucas.jpg');
-        background-position: right;
-    }
+.lucas {
+    background-image: url('../assets/img/Lucas.jpg');
+    background-position: right !important;
 }
 
 //Modais
@@ -179,7 +168,7 @@
         z-index: 10000;
     }
     .profile {
-        background-image: url('../assets/img/Davi.jpg');
+        // background-image: url('../assets/img/Davi.jpg');
         background-size: cover;
         background-position: center;
         min-height: 512px;
@@ -218,15 +207,4 @@
     }
 }
 
-//Animations
-@keyframes bounce {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-5px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
+@include bounce;

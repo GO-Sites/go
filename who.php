@@ -16,7 +16,7 @@
                     <h1 class="team-name"><b>Natália</b><br>Rebouças</h1>
                     <p class="function">
                         CEO 
-                        <button type="button" class="cv" data-toggle="modal" data-target="#exampleModalCenter">
+                        <button type="button" class="cv" data-toggle="modal" data-target="#Natalia">
                             <img src="assets/icons/plus.svg" class="cv-icon">
                         </button>
                     </p>
@@ -27,7 +27,7 @@
                     <h1 class="team-name"><b>Jorge</b><br>Carvalho</h1>
                     <p class="function">
                         Diretor de Criação
-                        <button type="button" class="cv" data-toggle="modal" data-target="#exampleModalCenter">
+                        <button type="button" class="cv" data-toggle="modal" data-target="#Jorge">
                             <img src="assets/icons/plus.svg" class="cv-icon">
                         </button>
                     </p>
@@ -40,7 +40,7 @@
                     <h1 class="team-name"><b>Davi</b><br>Moura</h1>
                     <p class="function">
                         Consultor<br>de Marketing
-                        <button type="button" class="cv" data-toggle="modal" data-target="#exampleModalCenter">
+                        <button type="button" class="cv" data-toggle="modal" data-target="#Davi">
                             <img src="assets/icons/plus.svg" class="cv-icon">
                         </button>
                     </p>
@@ -51,7 +51,7 @@
                     <h1 class="team-name"><b>Ali</b><br>Vieira</h1>
                     <p class="function">
                         Designer
-                        <button type="button" class="cv" data-toggle="modal" data-target="#exampleModalCenter">
+                        <button type="button" class="cv" data-toggle="modal" data-target="#Alisson">
                             <img src="assets/icons/plus.svg" class="cv-icon">
                         </button>
                     </p>
@@ -62,7 +62,7 @@
                     <h1 class="team-name">Lucas<br><b>Weiby</b></h1>
                     <p class="function">
                         Designer
-                        <button type="button" class="cv" data-toggle="modal" data-target="#exampleModalCenter">
+                        <button type="button" class="cv" data-toggle="modal" data-target="#Lucas">
                             <img src="assets/icons/plus.svg" class="cv-icon">
                         </button>
                     </p>
@@ -73,7 +73,7 @@
 </section>
 
 <!-- Modais -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="Natalia" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -81,12 +81,144 @@
         </button>
         <div class="container container-ps">
             <div class="row">
-                <div class="col-md-4 profile">
+                <div class="col-md-4 profile naty">
+                </div>
+                <div class="col-md-8 text">
+                    <div class="header">
+                        <h1 class="name">Natália Rebouças</h1>
+                        <p class="function">CEO</p>
+                    </div>
+
+                    <div class="body">
+                        <h3 class="description">Descrição</h3>
+                        <p class="description-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Quis ratione incidunt reprehenderit laudantium porro veniam quibusdam nisi? Animi 
+                            incidunt architecto saepe cumque velit quasi repellendus repellat aliquid. 
+                            Voluptas porro architecto, quis corrupti pariatur nam sit eum doloremque tempore 
+                            soluta necessitatibus iure, autem neque minus ab sint reprehenderit laudantium beatae! 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Jorge" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="assets/icons/times.svg" alt="" class="close-icon"></span>
+        </button>
+        <div class="container container-ps">
+            <div class="row">
+                <div class="col-md-4 profile jorge">
+                </div>
+                <div class="col-md-8 text">
+                    <div class="header">
+                        <h1 class="name">Jorge Carvalho</h1>
+                        <p class="function">Diretor de Criação</p>
+                    </div>
+
+                    <div class="body">
+                        <h3 class="description">Descrição</h3>
+                        <p class="description-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Quis ratione incidunt reprehenderit laudantium porro veniam quibusdam nisi? Animi 
+                            incidunt architecto saepe cumque velit quasi repellendus repellat aliquid. 
+                            Voluptas porro architecto, quis corrupti pariatur nam sit eum doloremque tempore 
+                            soluta necessitatibus iure, autem neque minus ab sint reprehenderit laudantium beatae! 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Davi" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="assets/icons/times.svg" alt="" class="close-icon"></span>
+        </button>
+        <div class="container container-ps">
+            <div class="row">
+                <div class="col-md-4 profile davi">
                 </div>
                 <div class="col-md-8 text">
                     <div class="header">
                         <h1 class="name">Davi Moura</h1>
                         <p class="function">Consultor de Marketing</p>
+                    </div>
+
+                    <div class="body">
+                        <h3 class="description">Descrição</h3>
+                        <p class="description-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Quis ratione incidunt reprehenderit laudantium porro veniam quibusdam nisi? Animi 
+                            incidunt architecto saepe cumque velit quasi repellendus repellat aliquid. 
+                            Voluptas porro architecto, quis corrupti pariatur nam sit eum doloremque tempore 
+                            soluta necessitatibus iure, autem neque minus ab sint reprehenderit laudantium beatae! 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Alisson" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="assets/icons/times.svg" alt="" class="close-icon"></span>
+        </button>
+        <div class="container container-ps">
+            <div class="row">
+                <div class="col-md-4 profile alisson">
+                </div>
+                <div class="col-md-8 text">
+                    <div class="header">
+                        <h1 class="name">Ali Vieira</h1>
+                        <p class="function">Designer</p>
+                    </div>
+
+                    <div class="body">
+                        <h3 class="description">Descrição</h3>
+                        <p class="description-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Quis ratione incidunt reprehenderit laudantium porro veniam quibusdam nisi? Animi 
+                            incidunt architecto saepe cumque velit quasi repellendus repellat aliquid. 
+                            Voluptas porro architecto, quis corrupti pariatur nam sit eum doloremque tempore 
+                            soluta necessitatibus iure, autem neque minus ab sint reprehenderit laudantium beatae! 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Lucas" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="assets/icons/times.svg" alt="" class="close-icon"></span>
+        </button>
+        <div class="container container-ps">
+            <div class="row">
+                <div class="col-md-4 profile lucas">
+                </div>
+                <div class="col-md-8 text">
+                    <div class="header">
+                        <h1 class="name">Lucas Weiby</h1>
+                        <p class="function">Designer</p>
                     </div>
 
                     <div class="body">

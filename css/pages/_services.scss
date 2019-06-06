@@ -1,0 +1,102 @@
+.services {
+    .phrase {
+        padding: 64px 32px 64px 0;
+        .title {
+            color: $grey;
+            font-weight: bold;
+            position: relative;
+            z-index: 4;
+            &::before {
+                content: " ";
+                width: 128px;
+                height: 128px;
+                background-image: url('../assets/icons/quote.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                opacity: 0.3;
+                position: absolute;
+                z-index: 1;
+            }
+        }
+        .author {
+            font-family: $default-font-lt;
+            text-transform: uppercase;
+            margin: 0;
+        }
+    }
+
+    .service {
+        border: none;
+        border-radius: 0;
+        text-align: center;
+        margin-bottom: 8px;
+        min-height: 256px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        -webkit-transition: all .1s ease-in-out;
+        -moz-transition: all .1s ease-in-out;
+        -o-transition: all .1s ease-in-out;
+        transition: all .1s ease-in-out;
+        &-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        &-icon {
+            padding: 16px 0;
+            display: block;
+            margin: 0 auto;
+        }
+        &-name {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        &:hover {
+            -webkit-animation: bounce-shadow 1s infinite;
+            -moz-animation: bounce-shadow 1s infinite;
+            -o-animation: bounce-shadow 1s infinite;
+            animation: bounce-shadow 1s infinite;
+        }
+    }
+    .start-project {
+        text-align: center;
+        padding: 32px 0;
+        .button {
+            color: $grey;
+            text-decoration: none;
+            text-transform: uppercase;
+            border: 2px solid $grey;
+            padding: 8px 32px;
+            font-family: "Proxima Nova";
+            position: relative;
+            -webkit-transition: all .2s ease-in;
+            -moz-transition: all .2s ease-in;
+            -o-transition: all .2s ease-in;
+            transition: all .2s ease-in;
+            &::after {
+                content: " ";
+                width: 0%;
+                height: 100%;
+                background-color: $red;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: all .2s ease-in;
+                z-index: -1;
+            }
+            &:hover {
+                color: #fff;
+                text-decoration: none;
+                border-color: $red;
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@include bounce-shadow;

@@ -1,0 +1,83 @@
+.single-case {
+    padding-bottom: 32px;
+    &-sidebar {
+        text-align: right;
+        position: relative;
+    }
+    &-name {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    &-category {
+        font-family: $default-font-lt;
+        text-transform: uppercase;
+    }
+    &-back {
+        img {
+            width: 24px;
+        }
+        .link {
+            color: $grey;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        &:hover {
+            img {
+                animation-name: bounce-on-side;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+            }
+            .link {
+                text-decoration: none;
+            }
+        }
+    }
+    &-thumb {
+        width: 100%;
+        height: 384px;
+        background-image: url('../assets/img/1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &-text {
+        margin: 24px 0;
+        font-family: $default-font-lt;
+        text-align: justify;
+    }
+    .button {
+        color: $grey;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 2px solid $grey;
+        padding: 8px 32px;
+        font-family: "Proxima Nova";
+        position: relative;
+        top: 32px;
+        -webkit-transition: all .2s ease-in;
+        -moz-transition: all .2s ease-in;
+        -o-transition: all .2s ease-in;
+        transition: all .2s ease-in;
+        &::after {
+            content: " ";
+            width: 0%;
+            height: 100%;
+            background-color: $red;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all .2s ease-in;
+            z-index: -1;
+        }
+        &:hover {
+            color: #fff;
+            text-decoration: none;
+            border-color: $red;
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@include bounce-on-side;

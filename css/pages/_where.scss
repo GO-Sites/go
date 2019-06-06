@@ -1,0 +1,36 @@
+.where {
+    padding: 64px 0;
+    #map, #map2 {
+        min-height: 512px;
+    }
+    .state {
+        display: flex;
+        align-items: center;
+        &-label {
+            font-weight: bold;
+            font-size: 64px;
+            margin: 0;
+        }
+    }
+    .label {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h6 {
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        &-street {
+            margin: 0;
+            line-height: 1.2;
+        }
+    }
+    .local {
+        padding: 0;
+    }
+    .localization {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
