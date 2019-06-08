@@ -4,10 +4,13 @@
     <?php include "config/head.php"; ?>
     <title>GO! Branding + Design</title>
 </head>
-<body>
+<body>  
+    <div class="loader">
+        <img src="assets/img/logo.gif" class="logo-gif-load">
+    </div>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="index.php">Navbar</a>
+            <a class="navbar-brand" href="index.php"><img src="assets/img/logo.gif" alt="" class="img-fluid"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><img src="assets/icons/bars.svg"></span>
             </button>
@@ -23,3 +26,10 @@
             </div>
         </div>
     </nav>
+
+    <div id="player">
+        <audio class="go" autoplay hidden loop>
+            <source src="assets/audio/go.mp3" type="audio/mpeg">
+                    If you're reading this, audio isn't supported. 
+        </audio>
+    </div>

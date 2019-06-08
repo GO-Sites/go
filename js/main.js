@@ -59,3 +59,8 @@ $('.search-item').hover(function() {
 }, function() {
     $('.search').attr('src','assets/icons/search.svg');
 });
+
+$(document).ready(function () {
+    $(".loader").fadeOut("fast");
+    $('.logo-gif-load').src='../assets/img/logo.gif';
+});
